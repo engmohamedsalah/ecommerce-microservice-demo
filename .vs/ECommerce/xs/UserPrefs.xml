@@ -1,35 +1,34 @@
-﻿<Properties StartupConfiguration="Multiple Projects">
+﻿<Properties StartupConfiguration="{7EEB35A3-85BF-4FFD-AE3F-FA7B3E0C8E6E}|Default">
   <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Orders PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Products.Tests FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api.Products.Tests/ProductsServiceTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.yml">
     <Files>
-      <File FileName="ECommerce.Api.Search/Services/OrdersService.cs" Line="26" Column="1" />
-      <File FileName="ECommerce.Api.Search/Services/SearchService.cs" />
-      <File FileName="ECommerce.Api.Search/Interfaces/ICustomersService.cs" />
-      <File FileName="ECommerce.Api.Search/Models/Customer.cs" />
-      <File FileName="ECommerce.Api.Search/Services/CustomersSerivce.cs" />
-      <File FileName="ECommerce.Api.Orders/Models/Order.cs" />
-      <File FileName="ECommerce.Api.Search/Models/Orders.cs" />
-      <File FileName="ECommerce.Api.Search/Startup.cs" />
-      <File FileName="ECommerce.Api.Search/Services/ProductsService.cs" />
-      <File FileName="ECommerce.Api.Customers/appsettings.json" />
-      <File FileName="ECommerce.Api.Customers/Properties/launchSettings.json" />
-      <File FileName="ECommerce.Api.Orders/Properties/launchSettings.json" />
-      <File FileName="ECommerce.Api.Products/Properties/launchSettings.json" />
-      <File FileName="ECommerce.Api.Search/Properties/launchSettings.json" />
-      <File FileName="ECommerce.Api.Products/Profiles/ProductProfile.cs" />
-      <File FileName="ECommerce.Api.Products/Startup.cs" />
-      <File FileName="ECommerce.Api.Products/Providers/ProductsProvider.cs" />
-      <File FileName="ECommerce.Api.Products/Controllers/ProductsController.cs" />
-      <File FileName="ECommerce.Api.Products.Tests/ProductsServiceTest.cs" Line="19" Column="49" />
+      <File FileName=".dockerignore" Line="1" Column="1" />
+      <File FileName="docker-compose.yml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ECommerce" expanded="True">
-            <Node name="ECommerce.Api.Products.Tests" expanded="True">
-              <Node name="ProductsServiceTest.cs" selected="True" />
+            <Node name="docker-compose" expanded="True">
+              <Node name="docker-compose.yml" selected="True" />
             </Node>
+            <Node name="ECommerce.Api.Search" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>ex.Message</Value>
+          <Value>ex</Value>
+          <Value>client.BaseAddress</Value>
+          <Value>customers.Customers</Value>
+          <Value>i</Value>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="ECommerce" expanded="True">
+            <Node name="ECommerce.Api.Products.Tests" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -40,8 +39,12 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Search PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Products.Tests/ProductsServiceTest.cs" relfile="ECommerce.Api.Products.Tests/ProductsServiceTest.cs" line="55" column="1" />
+      <Breakpoint file="/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Products.Tests/ProductsServiceTest.cs" relfile="ECommerce.Api.Products.Tests/ProductsServiceTest.cs" line="20" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
