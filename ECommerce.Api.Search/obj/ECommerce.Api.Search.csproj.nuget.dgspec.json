@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Search/ECommerce.Api.Search.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Search/ECommerce.Api.Search.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Search/ECommerce.Api.Search.csproj",
+        "projectName": "ECommerce.Api.Search",
+        "projectPath": "/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Search/ECommerce.Api.Search.csproj",
+        "packagesPath": "/Users/msalah/.nuget/packages/",
+        "outputPath": "/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Search/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/msalah/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
