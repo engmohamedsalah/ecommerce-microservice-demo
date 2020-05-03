@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("20d46465-f8f4-4d9b-b9e5-72dbf7d2f5a8")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECommerce.Api.Orders")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

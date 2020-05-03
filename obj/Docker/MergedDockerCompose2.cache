@@ -1,0 +1,129 @@
+services:
+  ecommerce.api.customers:
+    build:
+      context: /Volumes/Data/Projects/ecommerce-microservice-demo
+      dockerfile: ECommerce.Api.Customers/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Api.Customers
+      target: base
+    container_name: ECommerce.Api.Customers
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: ecommerceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/ECommerce.Api.Customers.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6002
+      target: 80
+    tty: true
+    volumes:
+    - /Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Customers:/app:rw
+    - /Users/msalah/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/msalah/.nuget/packages:/root/.nuget/packages:ro
+    - /Volumes/Data/Projects/ecommerce-microservice-demo:/src:rw
+  ecommerce.api.orders:
+    build:
+      context: /Volumes/Data/Projects/ecommerce-microservice-demo
+      dockerfile: ECommerce.Api.Orders/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Api.Orders
+      target: base
+    container_name: ECommerce.Api.Orders
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: ecommerceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/ECommerce.Api.Orders.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6003
+      target: 80
+    tty: true
+    volumes:
+    - /Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Orders:/app:rw
+    - /Users/msalah/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/msalah/.nuget/packages:/root/.nuget/packages:ro
+    - /Volumes/Data/Projects/ecommerce-microservice-demo:/src:rw
+  ecommerce.api.products:
+    build:
+      context: /Volumes/Data/Projects/ecommerce-microservice-demo
+      dockerfile: ECommerce.Api.Products/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Api.Products
+      target: base
+    container_name: ECommerce.Api.Products
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: ecommerceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/ECommerce.Api.Products.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6001
+      target: 80
+    tty: true
+    volumes:
+    - /Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Products:/app:rw
+    - /Users/msalah/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/msalah/.nuget/packages:/root/.nuget/packages:ro
+    - /Volumes/Data/Projects/ecommerce-microservice-demo:/src:rw
+  ecommerce.api.search:
+    build:
+      context: /Volumes/Data/Projects/ecommerce-microservice-demo
+      dockerfile: ECommerce.Api.Search/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Api.Search
+      target: base
+    container_name: ECommerce.Api.Search
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+      Services__Customers: ' http://ecommerce.api.customers'
+      Services__Orders: ' http://ecommerce.api.orders'
+      Services__Products: ' http://ecommerce.api.products'
+    image: ecommerceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/ECommerce.Api.Search.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6004
+      target: 80
+    tty: true
+    volumes:
+    - /Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Search:/app:rw
+    - /Users/msalah/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/msalah/.nuget/packages:/root/.nuget/packages:ro
+    - /Volumes/Data/Projects/ecommerce-microservice-demo:/src:rw
+version: '3.4'

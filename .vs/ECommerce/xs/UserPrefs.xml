@@ -1,18 +1,29 @@
 ﻿<Properties StartupConfiguration="{7EEB35A3-85BF-4FFD-AE3F-FA7B3E0C8E6E}|Default">
   <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Orders PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.yml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api.Search/Services/SearchService.cs">
     <Files>
       <File FileName=".dockerignore" Line="1" Column="1" />
       <File FileName="docker-compose.yml" Line="1" Column="1" />
+      <File FileName="docker-compose.override.yml" Line="13" Column="4" />
+      <File FileName="ECommerce.Api.Orders/appsettings.json" Line="1" Column="1" />
+      <File FileName="ECommerce.Api.Orders/Properties/launchSettings.json" Line="10" Column="5" />
+      <File FileName="../../../../Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/docker/MonoDevelop.Docker/MSbuild/Sdks/Microsoft.Docker.Sdk/build/Microsoft.VisualStudio.Docker.Compose.targets" Line="337" Column="6" />
+      <File FileName="ECommerce.Api.Search/Controllers/SearchController.cs" Line="25" Column="1" />
+      <File FileName="ECommerce.Api.Search/Models/SearchItem.cs" Line="6" Column="30" />
+      <File FileName="ECommerce.Api.Search/Services/OrdersService.cs" Line="16" Column="1" />
+      <File FileName="ECommerce.Api.Search/Services/SearchService.cs" Line="27" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ECommerce" expanded="True">
-            <Node name="docker-compose" expanded="True">
-              <Node name="docker-compose.yml" selected="True" />
+            <Node name="ECommerce.Api.Search" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="SearchService.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="ECommerce.Api.Search" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -44,6 +55,7 @@
     <BreakpointStore>
       <Breakpoint file="/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Products.Tests/ProductsServiceTest.cs" relfile="ECommerce.Api.Products.Tests/ProductsServiceTest.cs" line="55" column="1" />
       <Breakpoint file="/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Products.Tests/ProductsServiceTest.cs" relfile="ECommerce.Api.Products.Tests/ProductsServiceTest.cs" line="20" column="1" />
+      <Breakpoint file="/Volumes/Data/Projects/ecommerce-microservice-demo/ECommerce.Api.Search/Controllers/SearchController.cs" relfile="ECommerce.Api.Search/Controllers/SearchController.cs" line="24" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
